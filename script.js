@@ -13,13 +13,13 @@ function resize() {
 window.addEventListener("resize", resize);
 resize();
 
-for (let i=0;i<40;i++){
+for (let i=0;i<50;i++){
   particles.push({
     x:Math.random()*canvas.width,
     y:Math.random()*canvas.height,
     r:Math.random()*2+1,
-    dx:(Math.random()-0.5)*0.2,
-    dy:(Math.random()-0.5)*0.2
+    dx:(Math.random()-0.5)*0.3,
+    dy:(Math.random()-0.5)*0.3
   });
 }
 
@@ -37,3 +37,15 @@ function animate(){
   requestAnimationFrame(animate);
 }
 animate();
+
+// Fun facts rotator
+const facts = [
+  "Water can boil and freeze at the same time (triple point).",
+  "Bananas are berries, but strawberries are not.",
+  "A teaspoon of neutron star material weighs about 6 billion tons.",
+  "Sharks existed before trees.",
+  "Your body has more bacterial cells than human cells."
+];
+let factIndex = 0;
+function showFact(){
+  document.getElementById("fact").textContent
