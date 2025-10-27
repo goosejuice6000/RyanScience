@@ -48,4 +48,8 @@ const facts = [
 ];
 let factIndex = 0;
 function showFact(){
-  document.getElementById("fact").textContent
+  document.getElementById("fact").textContent = facts[factIndex];
+  factIndex = (factIndex + 1) % facts.length;
+}
+setInterval(showFact, 5000);
+showFact();
