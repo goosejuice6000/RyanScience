@@ -4,26 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RyanScience</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Animated Background -->
+  <div class="bg"></div>
   <canvas id="particles"></canvas>
 
+  <!-- Hero Section -->
   <section class="hero">
     <h1 class="cool-title">RyanScience</h1>
-    <p>From atoms to galaxies, explore the wonders of science with clear explanations, interactive ideas, and real-world connections.</p>
+    <p class="tagline">From atoms to galaxies, explore the wonders of science with clear explanations, interactive ideas, and real-world connections.</p>
+    <a href="#subjects" class="cta-btn">Start Exploring ↓</a>
   </section>
 
-  <main class="grid">
-    <a href="chemistry.html" class="card">🔬 Chemistry</a>
-    <a href="biology.html" class="card">🧬 Biology</a>
-    <a href="physics.html" class="card">⚛️ Physics</a>
-    <a href="geology.html" class="card">🌍 Geology</a>
-    <a href="astronomy.html" class="card">🌌 Astronomy</a>
-    <a href="more.html" class="card">🧩 More Sciences</a>
-  </main>
+  <!-- Subjects Grid -->
+  <section id="subjects" class="grid-section">
+    <h2>Explore Subjects</h2>
+    <div class="grid">
+      <a href="chemistry.html" class="card">🔬 Chemistry</a>
+      <a href="biology.html" class="card">🧬 Biology</a>
+      <a href="physics.html" class="card">⚛️ Physics</a>
+      <a href="geology.html" class="card">🌍 Geology</a>
+      <a href="astronomy.html" class="card">🌌 Astronomy</a>
+      <a href="more.html" class="card">🧩 More Sciences</a>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section class="about">
+    <h2>About This Site</h2>
+    <p>RyanScience is built to make learning science engaging, visual, and interactive. Whether you’re curious about the smallest particles or the largest galaxies, you’ll find clear explanations, animations, and resources here.</p>
+  </section>
+
+  <!-- Fun Facts Rotator -->
+  <section class="facts">
+    <h2>Did You Know?</h2>
+    <p id="fact">Loading fun fact...</p>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Keep Exploring</h2>
+    <p>Science never stops — and neither should your curiosity. Dive into the subjects, test yourself with quizzes, and discover the universe one concept at a time.</p>
+    <a href="#subjects" class="cta-btn">Explore Now</a>
+  </section>
+
+  <!-- Footer -->
   <footer>
     © <span id="year"></span> RyanScience • Built with curiosity
   </footer>
